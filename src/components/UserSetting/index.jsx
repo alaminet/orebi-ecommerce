@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
-import { FaCartShopping, FaUser } from "react-icons/fa6";
+import { FaUser } from "react-icons/fa6";
+import { MdArrowDropDown } from "react-icons/md";
 import Lists from "../Lists";
 import ListItem from "../ListItem";
 import Flex from "../Flex";
@@ -20,8 +21,9 @@ const UserSetting = () => {
   return (
     <>
       <div className="relative">
-        <div onClick={handleProfileClick} className="cursor-pointer">
+        <div onClick={handleProfileClick} className="cursor-pointer flex">
           <FaUser />
+          <MdArrowDropDown />
         </div>
         {profileShow && (
           <div
@@ -33,7 +35,7 @@ const UserSetting = () => {
                 <ListItem key={i}>
                   <Link
                     href={item.link}
-                    className="text-gray-700 block px-4 py-2 text-sm last:border-b-0 border-b border-solid  border-white-100 hover:bg-white-100 transition-all duration-150 ease-in cursor-pointer"
+                    className="text-gray-700 block px-4 py-2 text-sm last:border-b-0 border-b border-solid border-light-gray hover:pl-6 transition-all duration-300 ease-in cursor-pointer"
                   >
                     <Flex className="gap-2 items-center">
                       <div>{item.icon}</div>

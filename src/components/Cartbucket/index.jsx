@@ -34,7 +34,7 @@ const Cartbucket = () => {
           >
             {cartData.map((item, i) => (
               <div key={i}>
-                <Flex className="items-center gap-2 p-2 bg-light-gray">
+                <Flex className="items-center gap-2 mb-2 p-2 bg-light-gray hover:bg-white transition-all duration-300 ease-linear">
                   <div>
                     <Image
                       className="w-[50px] h-[50px] object-cover"
@@ -50,7 +50,7 @@ const Cartbucket = () => {
                       </Link>
                     </div>
                     <div className="self-center">
-                      <IoIosClose className="cursor-pointer" />
+                      <IoIosClose className="cursor-pointer transition transform hover:scale-150 duration-700 ease-in-out" />
                     </div>
                   </Flex>
                 </Flex>

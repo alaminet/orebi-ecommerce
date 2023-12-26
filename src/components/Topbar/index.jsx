@@ -16,7 +16,7 @@ const Topbar = () => {
             <div className="w-3/5">
               <SearchBar />
             </div>
-            <Flex className="gap-4 items-center">
+            <Flex className="gap-5 items-center">
               <UserSetting />
               <Cartbucket />
             </Flex>
