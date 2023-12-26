@@ -25,18 +25,16 @@ const Navbar = () => {
     window.addEventListener("resize", scrollWidth);
   }, []);
 
-  console.log(show);
-  console.log(screen);
   return (
     <>
       <Container className="py-8 font-dmsans">
         <nav>
-          <div className="lg:flex lg:items-center">
+          <div className="lg:flex lg:items-center lg:justify-between">
             <div className="w-[20%]">
               <Logo />
             </div>
 
-            <div className="self-center">
+            <div className="">
               <FaBars
                 onClick={() => setShow(!show)}
                 className="block lg:hidden absolute top-8 right-6 text-lg"

@@ -17,6 +17,10 @@ export default {
       container: {
         center: true,
       },
+      colors: {
+        "light-gray": "#F5F5F3",
+        "primary-black": "#262626",
+      },
     },
   },
   plugins: [],
