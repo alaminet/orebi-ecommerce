@@ -34,13 +34,13 @@ const Navbar = () => {
               <Logo />
             </div>
 
-            <div className="">
+            <div className="relative">
               <FaBars
                 onClick={() => setShow(!show)}
-                className="block lg:hidden absolute top-8 right-6 text-lg"
+                className="block lg:hidden absolute -top-4 right-0 text-lg"
               />
               {show && (
-                <Lists className="lg:flex lg:justify-center lg:gap-4 bg-white p-5 lg:p-0">
+                <Lists className="lg:flex lg:justify-center lg:gap-4 lg:static absolute right-0 z-10 bg-white p-5 lg:p-0">
                   {MenuData.map((item, i) => (
                     <ListItem className="p-2 lg:px-4 lg:py-2" key={i}>
                       <Link
