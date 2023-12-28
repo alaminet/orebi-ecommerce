@@ -2,6 +2,7 @@ import productImg1 from "../../assets/images/product_1.webp";
 import productImg2 from "../../assets/images/product_2.webp";
 import productImg3 from "../../assets/images/product_3.webp";
 import productImg4 from "../../assets/images/product_4.webp";
+import productImg5 from "../../assets/images/product_5.webp";
 
 export const newArrivalData = [
   {
@@ -55,6 +56,24 @@ export const newArrivalData = [
     image: productImg4,
     price: "30.99",
     badge: "50%",
+    color: [
+      {
+        value: "Navey",
+      },
+      {
+        value: "Gray",
+      },
+      {
+        value: "Black",
+      },
+    ],
+  },
+  {
+    title: "Product Title five",
+    link: "#",
+    image: productImg5,
+    price: "30.99",
+    badge: "Hot",
     color: [
       {
         value: "Navey",
