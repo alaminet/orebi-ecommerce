@@ -11,7 +11,7 @@ const NewArrival = () => {
   return (
     <>
     <Container className="mt-20">
-    <Heading className="pb-12" title="New Arrivals"/>
+    <Heading className="pb-4" title="New Arrivals"/>
     <div>
     <Swiper
         spaceBetween={50}
@@ -21,9 +21,9 @@ const NewArrival = () => {
       >
         {
             
-            newArrivalData.map((item,i)=>(
+            newArrivalData?.map((item,i)=>(
                 <SwiperSlide key={i}>
-                <Product badge={item.badge} title={item.title} image={item.image} price={item.price} varient={item.color}/>
+                <Product badge={item?.badge} title={item?.title} image={item?.image} price={item?.price} varient={item?.color}/>
                 </SwiperSlide>
             ))
         }

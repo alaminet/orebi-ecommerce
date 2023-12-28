@@ -10,7 +10,7 @@ export const newArrivalData = [
     link: "#",
     image: productImg1,
     price: "10.99",
-    badge: "New",
+    // badge: "New",
     color: [
       {
         value: "red",
@@ -38,7 +38,7 @@ export const newArrivalData = [
   {
     title: "Product Title three",
     link: "#",
-    image: productImg3,
+    // image: productImg3,
     price: "15.99",
     badge: "Populer",
     color: [

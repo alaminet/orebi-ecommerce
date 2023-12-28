@@ -12,7 +12,9 @@ const Product = ({badge,link,image,title,price,varient}) => {
     <>
     <div className="max-w-[370px]">
         <div className="relative overflow-y-hidden group">
-          <Badge title={badge ?? "badge"} />
+          {
+            badge && <Badge title={badge} />
+          }
           <Link href={link ?? "#"}>
             <Image
               src={image ?? defaultImg}
