@@ -4,6 +4,7 @@ import Topbar from '../Topbar'
 import Banner from '../Banner'
 import Offers from '../Offers'
 import NewArrival from '../NewArrival'
+import BestSeller from '../BestSeller'
 
 const RootLayout = () => {
   return (
@@ -13,6 +14,7 @@ const RootLayout = () => {
     <Banner/>
     <Offers/>
     <NewArrival/>
+    <BestSeller/>
    </>
   )
 }

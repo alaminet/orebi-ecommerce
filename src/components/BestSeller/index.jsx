@@ -2,16 +2,15 @@ import React from 'react'
 import Heading from '../Heading'
 import Container from '../Container'
 import Product from '../Product'
-import { newArrivalData } from './newArrivalData'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SliderBtns from '../SliderBtns'
+import { bestSellerData } from './bestSellerData'
 
-
-const NewArrival = () => {
+const BestSeller = () => {
   return (
     <>
     <Container className="mt-20">
-    <Heading className="pb-4" title="New Arrivals"/>
+    <Heading className="pb-4" title="Best Seller"/>
     <div>
     <Swiper
         spaceBetween={50}
@@ -21,7 +20,7 @@ const NewArrival = () => {
       >
         {
             
-            newArrivalData?.map((item,i)=>(
+            bestSellerData?.map((item,i)=>(
                 <SwiperSlide key={i}>
                 <Product badge={item?.badge} title={item?.title} image={item?.image} price={item?.price} varient={item?.color}/>
                 </SwiperSlide>
@@ -35,4 +34,4 @@ const NewArrival = () => {
   )
 }
 
-export default NewArrival
+export default BestSeller
