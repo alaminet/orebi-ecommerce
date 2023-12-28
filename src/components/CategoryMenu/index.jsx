@@ -34,7 +34,7 @@ const CategoryMenu = () => {
 
         {dropdownCatShow && (
           <div
-            className="lg:w-full w-fit shadow-[0px_20px_60px_0px_rgba(40,_40,_40,_0.15)] absolute top-[155%] left-0 z-10 bg-white"
+            className="w-fit shadow-[0px_20px_60px_0px_rgba(40,_40,_40,_0.15)] absolute top-[155%] left-0 z-10 bg-white"
             ref={clickCatOutside}
           >
             <Lists className="pl-2 py-2 w-[200px]">
