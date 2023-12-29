@@ -8,6 +8,7 @@ import BestSeller from '../BestSeller'
 import Promotional from '../Promotional'
 import SpecialOffer from '../SpecialOffer'
 import Footer from '../Footer'
+import Copyrigts from '../Copyrights'
 
 
 
@@ -23,6 +24,7 @@ const RootLayout = () => {
     <Promotional/>
     <SpecialOffer/>
     <Footer/>
+    <Copyrigts/>
    </>
   )
 }
