@@ -10,7 +10,7 @@ const Copyrigts = () => {
   return (
     <>
      <Container>
-     <Grid className="grid-cols-2 gap-5 py-5">
+     <Grid className="grid-cols-1 lg:grid-cols-2 gap-5 py-5">
         <div>
           <Lists className="flex gap-3">
             {footerSocialData.map((item, i) => (
@@ -21,7 +21,7 @@ const Copyrigts = () => {
           </Lists>
         </div>
         <div>
-          <p className="text-right text-xs text-gray">
+          <p className="text-center lg:text-right text-xs text-gray">
             2023 Orebi Minimal eCommerce Developed by{" "}
             <Link href="#" className="text-black">
               Al Amin

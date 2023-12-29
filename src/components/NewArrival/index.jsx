@@ -10,12 +10,25 @@ import SliderBtns from '../SliderBtns'
 const NewArrival = () => {
   return (
     <>
-    <Container className="mt-20">
-    <Heading className="pb-4" title="New Arrivals"/>
+    <Container className="lg:mt-20">
+    <Heading className="pb-2 lg:pb-4" title="New Arrivals"/>
     <div>
     <Swiper
-        spaceBetween={50}
-        slidesPerView={4}
+        breakpoints={{
+            640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            },
+            1024: {
+                spaceBetween: 40,
+                slidesPerView: 4,
+            },  }}
+
+        
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >

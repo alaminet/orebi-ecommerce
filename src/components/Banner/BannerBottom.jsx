@@ -7,7 +7,7 @@ import { TfiReload } from 'react-icons/tfi'
 const BannerBottom = () => {
   return (
     <>
-    <div className="container lg:py-7">
+    <div className="container lg:py-7 py-2">
         <Flex className="justify-between">
           <div>
             <Flex className="items-center gap-2 text-sm lg:text-3xl">

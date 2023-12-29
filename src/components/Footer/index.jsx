@@ -11,7 +11,7 @@ const Footer = () => {
   return (
    <>
    <Container className="mt-12">
-    <Grid className="grid-cols-5 gap-5">
+    <Grid className="grid-cols-2 lg:grid-cols-5 gap-5">
         <FooterMenu/>
        <FooterCategory/>
         <FooterHelp/>

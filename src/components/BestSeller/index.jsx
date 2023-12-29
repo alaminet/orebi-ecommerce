@@ -13,8 +13,19 @@ const BestSeller = () => {
     <Heading className="pb-4" title="Best Seller"/>
     <div>
     <Swiper
-        spaceBetween={50}
-        slidesPerView={4}
+        breakpoints={{
+          640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          },
+          768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          },
+          1024: {
+              spaceBetween: 40,
+              slidesPerView: 4,
+          },  }}
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >
