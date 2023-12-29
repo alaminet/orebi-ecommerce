@@ -6,6 +6,8 @@ import Offers from '../Offers'
 import NewArrival from '../NewArrival'
 import BestSeller from '../BestSeller'
 import Promotional from '../Promotional'
+import SpecialOffer from '../SpecialOffer'
+import Footer from '../Footer'
 
 
 
@@ -19,6 +21,8 @@ const RootLayout = () => {
     <NewArrival/>
     <BestSeller/>
     <Promotional/>
+    <SpecialOffer/>
+    <Footer/>
    </>
   )
 }
