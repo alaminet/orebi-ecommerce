@@ -14,15 +14,15 @@ const Shop = () => {
     <Container className="font-dmsans mt-12">
         <Title className="mb-3 text-5xl" title="Shop"/>
         <Breadcrumb/>
-       <div className="mt-12"> 
+        <div className="mt-12"> 
             <Grid className="grid-cols-4 gap-6">
-                    <div><VerticalFilter/></div>
-                    <div className="col-span-3">
-                        <div><HorizontalFilter/></div>
-                        <div><Paginate itemsPerPage={9} itemDetails={shopData}/></div>
-                    </div>
+                <div><VerticalFilter/></div>
+                <div className="col-span-3">
+                    <div><HorizontalFilter/></div>
+                    <div><Paginate itemsPerPage={9} itemDetails={shopData}/></div>
+                </div>
             </Grid>
-       </div>
+        </div>
     </Container>
     </>
   )

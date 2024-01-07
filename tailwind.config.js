@@ -20,6 +20,7 @@ export default {
       colors: {
         "light-gray": "#F5F5F3",
         "primary-black": "#262626",
+        "red": "#ff0000",
       },
     },
   },
