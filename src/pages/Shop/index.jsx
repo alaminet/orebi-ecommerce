@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../../components/Container'
 import Breadcrumb from '../../components/Breadcrumb'
 import Title from '../../components/Title'
@@ -9,6 +9,9 @@ import HorizontalFilter from '../../components/HorizontalFilter'
 import VerticalFilter from '../../components/VerticalFilter'
 
 const Shop = () => {
+  const [perPage, setPerPage] = useState(9);
+  const [itemSort, setItemSort] = useState(null);
+  
   return (
     <>
     <Container className="font-dmsans mt-12">
@@ -18,8 +21,8 @@ const Shop = () => {
             <Grid className="grid-cols-4 gap-6">
                 <div><VerticalFilter/></div>
                 <div className="col-span-3">
-                    <div><HorizontalFilter/></div>
-                    <div><Paginate itemsPerPage={9} itemDetails={shopData}/></div>
+                    <div><HorizontalFilter  perpage={setPerPage} itemSort={setItemSort}/></div>
+                    <div><Paginate itemsPerPage={perPage} itemDetails={shopData}/></div>
                 </div>
             </Grid>
         </div>

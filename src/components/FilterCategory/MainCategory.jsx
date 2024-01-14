@@ -19,7 +19,7 @@ const MainCategory = ({CatShow, title, subData, icon}) => {
                     </Flex>
                     {
                         subData && (
-                            <div onClick={()=> setSubCatShow(!subCatShow)}><HiOutlinePlusSm /></div>
+                            <div onClick={()=> setSubCatShow(!subCatShow)} className='cursor-pointer'><HiOutlinePlusSm /></div>
                         )
                     }
                 </Flex>

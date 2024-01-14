@@ -9,7 +9,7 @@ const FilterCategory = ({title,data,type}) => {
   return (
     <>
       <div className='mb-7'>
-        <div onClick={()=> setCatShow(!catShow)} className='flex items-center justify-between'>
+        <div onClick={()=> setCatShow(!catShow)} className='flex items-center justify-between cursor-pointer'>
             <Title className="mb-2" title={title}/>
             {
                 !catShow && <div><HiOutlinePlusSm /></div>
