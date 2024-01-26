@@ -10,10 +10,10 @@ const Breadcrumb = () => {
     <p>Home</p>
     {
         bread.slice(1).map((item,i)=>(
-            <>
+            <div key={i} className='flex items-center gap-1'>
             <FaAngleRight/>
-            <p key={i}>{item}</p>
-            </>
+            <p>{item}</p>
+            </div>
         ))
     }
     </Flex>

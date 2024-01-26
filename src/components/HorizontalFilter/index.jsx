@@ -26,7 +26,7 @@ const HorizontalFilter = ({perpage, itemSort}) => {
                 </Flex>
                 <Flex className="items-center gap-3">
                     <label for="countries" class="block text-sm font-medium text-gray-900 dark:text-white">Show:</label>
-                    <select onChange={(e)=> perpage(e.target.value)} id="countries" class="font-dmsans bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <select onChange={(e)=> perpage(e.target.value)} class="font-dmsans bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option value="6">6</option>
                         <option selected value="9">9</option>
                         <option value="12">12</option>

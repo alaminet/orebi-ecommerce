@@ -23,13 +23,13 @@ const FilterCategory = ({title,data,type}) => {
             : type === "color" && catShow ? (
 
                 <>
-                <ColorPallet color="red" className="bg-[#ff0000]"/>
-                <ColorPallet color="Yellow" className="bg-[#FFFF00]"/>
-                <ColorPallet color="Pink" className="bg-[#FFC0CB]"/>
-                <ColorPallet color="Green" className="bg-[#008000]"/>
-                <ColorPallet color="Grey" className="bg-[#808080]"/>
-                <ColorPallet color="Blue" className="bg-[#0000FF]"/>
-                <ColorPallet color="black" className="bg-[#000000]"/>
+                <ColorPallet color="red" className="bg-[#ff0000] border-b"/>
+                <ColorPallet color="Yellow" className="bg-[#FFFF00] border-b"/>
+                <ColorPallet color="Pink" className="bg-[#FFC0CB] border-b"/>
+                <ColorPallet color="Green" className="bg-[#008000] border-b"/>
+                <ColorPallet color="Grey" className="bg-[#808080] border-b"/>
+                <ColorPallet color="Blue" className="bg-[#0000FF] border-b"/>
+                <ColorPallet color="black" className="bg-[#000000] border-b"/>
                 </>
 
             )
