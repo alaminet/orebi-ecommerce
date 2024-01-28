@@ -12,6 +12,7 @@ import Quantity from '../../components/Quantity'
 import Button from '../../components/Button'
 import ButtonAlt from '../../components/ButtonAlt'
 import Accordion from '../../components/Accordion'
+import ReviewForm from '../../components/ReviewForm'
 
 const ProductInside = () => {
   const [sizeSelect, setSizeSelect] = useState("M");
@@ -95,6 +96,27 @@ const ProductInside = () => {
               </div>
             </div>
           </Grid>
+        </div>
+        <div>
+          <Flex className="gap-3">
+            <h6 className='text-xl'>Details</h6>
+            <h6 className='text-xl'>Review <span>(1)</span></h6>
+          </Flex>
+          <div className='mt-12'>
+            <p className='text-sm pb-5 border-b text-[#767676]'>1 review for product</p>
+            {/* review portion */}
+            <div className='mt-5'>
+              <Flex className="gap-3 items-center">
+                <p className='text-base font-bold'>Johan Ford</p>
+                <ReviewStar reviewStarCount={4}/>
+              </Flex>
+              <p className='text-base text-[#767676]'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eos temporibus minima consectetur incidunt suscipit. Magni voluptatem perferendis assumenda doloribus quasi, corrupti nostrum fugit. Magni voluptas perferendis consequuntur laborum nulla?
+              </p>
+              <ReviewForm/>
+            </div>
+            {/* Product Details Portion */}
+          </div>
         </div>
     </Container>
     </>
