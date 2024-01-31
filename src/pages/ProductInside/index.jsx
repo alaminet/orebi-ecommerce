@@ -16,6 +16,7 @@ import ReviewForm from '../../components/ReviewForm'
 
 const ProductInside = () => {
   const [sizeSelect, setSizeSelect] = useState("M");
+  const [showTab, setShowTab] = useState("review")
 
   console.log(sizeSelect);
   return (
@@ -98,29 +99,40 @@ const ProductInside = () => {
           </Grid>
         </div>
         <div>
-          <Flex className="gap-3">
-            <h6 className='text-xl'>Details</h6>
-            <h6 className='text-xl'>Review <span>(1)</span></h6>
+          <Flex className="gap-3 text-gray-400 mt-5">
+            <h6 className={`text-xl cursor-pointer ${showTab == "details" && "text-primary-black"}`} onClick={()=> setShowTab("details")}>Details</h6>
+            <h6 className={`text-xl cursor-pointer ${showTab == "review" && "text-primary-black"}`} onClick={()=> setShowTab("review")}>Review <span>(1)</span></h6>
           </Flex>
           <div className='mt-12'>
-            <p className='text-sm pb-5 border-b text-[#767676]'>1 review for product</p>
-            {/* review portion */}
-            <div className='mt-5'>
-              <Flex className="gap-3 items-center">
-                <p className='text-base font-bold'>Johan Ford</p>
-                <ReviewStar reviewStarCount={4}/>
-              </Flex>
-              <p className='text-base text-[#767676]'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eos temporibus minima consectetur incidunt suscipit. Magni voluptatem perferendis assumenda doloribus quasi, corrupti nostrum fugit. Magni voluptas perferendis consequuntur laborum nulla?
-              </p>
-              <div className='w-1/3'>
-                <ReviewForm/>
-              </div>
-            </div>
-            {/* Product Details Portion */}
-            <div>
-              
-            </div>
+            {
+              showTab == "review" ? (
+                <>
+                  <div className='mt-5'>
+                    <p className='text-sm pb-5 border-b text-[#767676]'>1 review for product</p>
+                    <Flex className="gap-3 items-center">
+                      <p className='text-base font-bold'>Johan Ford</p>
+                      <ReviewStar reviewStarCount={4}/>
+                    </Flex>
+                    <p className='text-base text-[#767676]'>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eos temporibus minima consectetur incidunt suscipit. Magni voluptatem perferendis assumenda doloribus quasi, corrupti nostrum fugit. Magni voluptas perferendis consequuntur laborum nulla?
+                    </p>
+                    <div className='w-1/3'>
+                      <ReviewForm/>
+                    </div>
+                  </div>
+                </>
+              ) : showTab == "details" && (
+                <>
+                <div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rerum totam fuga, illum adipisci velit repudiandae at cumque omnis? Fugit vel voluptatum alias, voluptatem sed error dicta eius ad, inventore possimus nesciunt, dolorum doloribus delectus asperiores aperiam ullam dolorem numquam! Odit, ducimus. Labore iusto cumque nihil tenetur. Ad, dolore laborum!</p>
+                  </div>
+                </div>
+                </>
+              )
+            }
+            
+            
           </div>
         </div>
     </Container>
