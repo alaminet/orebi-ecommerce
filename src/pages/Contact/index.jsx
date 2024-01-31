@@ -5,6 +5,7 @@ import Breadcrumb from '../../components/Breadcrumb'
 import ButtonAlt from '../../components/ButtonAlt'
 import mapImg from '../../assets/images/map.webp'
 import Image from '../../components/Image'
+import Accordion from '../../components/Accordion'
 
 const Contact = () => {
   return (
@@ -34,8 +35,31 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-            <div className='my-12'>
+            <div className='my-12 relative'>
                 <Image src={mapImg}/>
+                <div className='absolute left-12 top-12 z-10 bg-white p-5 rounded-sm w-[450px]'>
+                    <Accordion title="Headquater" details={
+                        <>
+                        <div className='text-[#767676]'>
+                            <p>575 Crescent Ave. Quakertown, PA 18951</p>
+                            <p>+432 533 12 523</p>
+                            <p>info@domain.com</p>
+                            <p>Mon - Fri: 9am - 6pm</p>
+                        </div>
+                        </>
+                    }/>
+                    <Accordion title="Factory" details={
+                        <>
+                        <div className='text-[#767676]'>
+                            <p>575 Crescent Ave. Quakertown, PA 18951</p>
+                            <p>+432 533 12 523</p>
+                            <p>info@domain.com</p>
+                            <p>Mon - Fri: 9am - 6pm</p>
+                        </div>
+                        </>
+                    }/>
+                    
+                </div>
             </div>
             
 
