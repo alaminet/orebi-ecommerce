@@ -13,6 +13,7 @@ import Button from '../../components/Button'
 import ButtonAlt from '../../components/ButtonAlt'
 import Accordion from '../../components/Accordion'
 import ReviewForm from '../../components/ReviewForm'
+import SpecialOffer from '../../components/SpecialOffer'
 
 const ProductInside = () => {
   const [sizeSelect, setSizeSelect] = useState("M");
@@ -131,9 +132,10 @@ const ProductInside = () => {
                 </>
               )
             }
-            
-            
           </div>
+        </div>
+        <div>
+        <SpecialOffer/>
         </div>
     </Container>
     </>
