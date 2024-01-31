@@ -3,6 +3,7 @@ import RootLayout from "./components/RootLayout";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import ProductInside from "./pages/ProductInside";
+import About from "./pages/About";
 
 function App() {
   const router = createBrowserRouter(
@@ -11,6 +12,7 @@ function App() {
           <Route index element={<Home/>}></Route>
           <Route path="/shop" element={<Shop/>}></Route>
           <Route path="/product" element={<ProductInside/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
         </Route>
     )
   )
