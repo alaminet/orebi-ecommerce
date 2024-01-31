@@ -113,9 +113,14 @@ const ProductInside = () => {
               <p className='text-base text-[#767676]'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eos temporibus minima consectetur incidunt suscipit. Magni voluptatem perferendis assumenda doloribus quasi, corrupti nostrum fugit. Magni voluptas perferendis consequuntur laborum nulla?
               </p>
-              <ReviewForm/>
+              <div className='w-1/3'>
+                <ReviewForm/>
+              </div>
             </div>
             {/* Product Details Portion */}
+            <div>
+              
+            </div>
           </div>
         </div>
     </Container>
