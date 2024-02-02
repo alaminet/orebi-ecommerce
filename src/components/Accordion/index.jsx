@@ -3,8 +3,8 @@ import Flex from '../Flex'
 import Title from '../Title'
 import { FaAngleDown, FaPlus } from 'react-icons/fa6'
 
-const Accordion = ({title,details}) => {
-    const [accordionShow, SetAccordionShow] = useState(false)
+const Accordion = ({title,details,show}) => {
+    const [accordionShow, SetAccordionShow] = useState(show)
 
   return (
     <>

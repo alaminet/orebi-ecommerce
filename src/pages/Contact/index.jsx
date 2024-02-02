@@ -38,7 +38,7 @@ const Contact = () => {
             <div className='my-12 relative'>
                 <Image src={mapImg}/>
                 <div className='absolute left-12 top-12 z-10 bg-white p-5 rounded-sm w-[450px]'>
-                    <Accordion title="Headquater" details={
+                    <Accordion title="Headquater" show={true} details={
                         <>
                         <div className='text-[#767676]'>
                             <p>575 Crescent Ave. Quakertown, PA 18951</p>
@@ -48,7 +48,7 @@ const Contact = () => {
                         </div>
                         </>
                     }/>
-                    <Accordion title="Factory" details={
+                    <Accordion title="Factory" show={true} details={
                         <>
                         <div className='text-[#767676]'>
                             <p>575 Crescent Ave. Quakertown, PA 18951</p>
