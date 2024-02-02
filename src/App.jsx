@@ -5,6 +5,7 @@ import Shop from "./pages/Shop";
 import ProductInside from "./pages/ProductInside";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
 
 function App() {
   const router = createBrowserRouter(
@@ -15,6 +16,7 @@ function App() {
           <Route path="/product" element={<ProductInside/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="/login" element={<Login/>}></Route>
         </Route>
     )
   )
