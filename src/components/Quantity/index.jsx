@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Flex from '../Flex'
 
-const Quantity = ({className}) => {
-    const [qty, setQty] = useState(1);
+const Quantity = ({className,qunatity}) => {
+    const [qty, setQty] = useState(qunatity || 1);
     const handleMinus = ()=>{
         if (qty >= 1) {
             setQty(qty - 1);
