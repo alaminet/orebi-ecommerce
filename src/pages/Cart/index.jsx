@@ -6,6 +6,7 @@ import Image from '../../components/Image'
 import defaultImg from '../../assets/images/productImg.webp'
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import Quantity from '../../components/Quantity'
+import ButtonAlt from '../../components/ButtonAlt'
 
 
 const Cart = () => {
@@ -32,6 +33,7 @@ const Cart = () => {
                                     <div className='flex items-center gap-2'>
                                         <div className='text-black cursor-pointer'><AiOutlineCloseSquare/></div>
                                         <div><Image src={defaultImg} alt="" className="h-28"/></div>
+                                        <div><h6>Product Title</h6></div>
                                     </div>
                                 </td>
                                 <td className='text-left pl-4 py-3'>$40.99</td>
@@ -43,6 +45,7 @@ const Cart = () => {
                                     <div className='flex items-center gap-2'>
                                         <div className='text-black cursor-pointer'><AiOutlineCloseSquare/></div>
                                         <div><Image src={defaultImg} alt="" className="h-28"/></div>
+                                        <div><h6>Product Title</h6></div>
                                     </div>
                                 </td>
                                 <td className='text-left pl-4 py-3'>$40.99</td>
@@ -55,11 +58,45 @@ const Cart = () => {
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td className='text-left pl-4 py-3'>Total=</td>
+                                <td className='text-right pl-4 py-3'>Total=</td>
                                 <td className='text-left pl-4 py-3'>1000.00</td>
                             </tr>
                         </tfoot>
                     </table>
+                    <div className='flex justify-end py-8'>
+                        <div>
+                            <h2 className='text-end font-bold'>Billing Details</h2>
+                            <div className='pt-5 '>
+                                <table className='border'>
+                                    <tbody>
+                                        <tr>
+                                            <td className='border text-left px-4 py-3'>Product Price</td>
+                                            <td className='border text-right px-4 py-3'>$100.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='border text-left px-4 py-3'>
+                                                <input className='outline-1 outline-gray-400 ring-1 py-2 px-2' type="text" placeholder='Coupon Code' />
+                                            </td>
+                                            <td className='border text-right px-4 py-3'>- $50.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='border text-left px-4 py-3'>TAX & VAT</td>
+                                            <td className='border text-right px-4 py-3'>$10.00</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot className=' text-primary-black font-bold'>
+                                        <tr>
+                                            <td className='text-right pl-4 py-3'>Total=</td>
+                                            <td className='text-right pr-4 py-3'>60.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='text-right'>
+                        <ButtonAlt className="py-4" title="Proceed to Checkout"/>
+                    </div>
                 </div>
             </Container>
         </>
