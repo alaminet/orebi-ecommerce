@@ -74,12 +74,6 @@ const Cart = () => {
                                             <td className='border text-right px-4 py-3'>$100.00</td>
                                         </tr>
                                         <tr>
-                                            <td className='border text-left px-4 py-3'>
-                                                <input className='outline-1 outline-gray-400 ring-1 py-2 px-2' type="text" placeholder='Coupon Code' />
-                                            </td>
-                                            <td className='border text-right px-4 py-3'>- $50.00</td>
-                                        </tr>
-                                        <tr>
                                             <td className='border text-left px-4 py-3'>TAX & VAT</td>
                                             <td className='border text-right px-4 py-3'>$10.00</td>
                                         </tr>
@@ -87,7 +81,7 @@ const Cart = () => {
                                     <tfoot className=' text-primary-black font-bold'>
                                         <tr>
                                             <td className='text-right pl-4 py-3'>Total=</td>
-                                            <td className='text-right pr-4 py-3'>60.00</td>
+                                            <td className='text-right pr-4 py-3'>$110.00</td>
                                         </tr>
                                     </tfoot>
                                 </table>
