@@ -1,15 +1,15 @@
 export const MenuData = [
   {
     title: "Home",
-    link: "#",
+    link: "/",
   },
   {
     title: "Shop",
-    link: "#",
+    link: "/shop",
   },
   {
     title: "About",
-    link: "#",
+    link: "/about",
   },
   {
     title: "Journal",
@@ -17,6 +17,6 @@ export const MenuData = [
   },
   {
     title: "Contacts",
-    link: "#",
+    link: "/contact",
   },
 ];

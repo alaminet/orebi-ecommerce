@@ -13,6 +13,7 @@ const Cartbucket = () => {
   const [cartShow, setCartShow] = useState(false);
   const clickCartOutside = useRef(null);
 
+
   const handleCartClick = () => {
     setCartShow(true);
   };
@@ -64,7 +65,7 @@ const Cartbucket = () => {
                 </p>
               </div>
               <Flex className="gap-3 mt-2">
-                <Button title="View Cart" />
+                <Button title="View Cart" href="/cart"/>
                 <ButtonAlt title="Checkout" />
               </Flex>
             </div>

@@ -17,7 +17,7 @@ export function Items({ currentItems, itemDetails }) {
         {currentItems &&
         itemDetails?.slice(firstItem, lastItem).map((item) => (
           <div>
-            <Product badge={item?.badge} title={item?.title} image={item?.image} price={item?.price} varient={item?.color}/>
+            <Product badge={item?.badge} title={item?.title} link={item?.link} image={item?.image} price={item?.price} varient={item?.color}/>
           </div>
         ))}
       </>

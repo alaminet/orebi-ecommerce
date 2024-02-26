@@ -7,7 +7,7 @@ import productImg5 from "../../assets/images/product_5.webp";
 export const shopData = [
   {
     title: "Product Title one",
-    link: "#",
+    link: "/product",
     image: productImg1,
     price: "10.99",
     // badge: "New",
@@ -22,7 +22,7 @@ export const shopData = [
   },
   {
     title: "Product Title two",
-    link: "#",
+    link: "/product",
     image: productImg2,
     price: "31.99",
     badge: "10%",
@@ -37,7 +37,7 @@ export const shopData = [
   },
   {
     title: "Product Title three",
-    link: "#",
+    link: "/product",
     // image: productImg3,
     price: "15.99",
     badge: "Populer",
@@ -52,7 +52,7 @@ export const shopData = [
   },
   {
     title: "Product Title four",
-    link: "#",
+    link: "/product",
     image: productImg4,
     price: "30.99",
     badge: "50%",
@@ -70,7 +70,7 @@ export const shopData = [
   },
   {
     title: "Product Title five",
-    link: "#",
+    link: "/product",
     image: productImg5,
     price: "30.99",
     badge: "Hot",
@@ -88,7 +88,7 @@ export const shopData = [
   },
   {
     title: "Product Title six",
-    link: "#",
+    link: "/product",
     image: productImg1,
     price: "10.99",
     badge: "New",
@@ -103,7 +103,7 @@ export const shopData = [
   },
   {
     title: "Product Title seven",
-    link: "#",
+    link: "/product",
     image: productImg2,
     price: "31.99",
     badge: "10%",
@@ -118,7 +118,7 @@ export const shopData = [
   },
   {
     title: "Product Title eight",
-    link: "#",
+    link: "/product",
     image: productImg3,
     price: "15.99",
     badge: "Populer",
@@ -133,7 +133,7 @@ export const shopData = [
   },
   {
     title: "Product Title nine",
-    link: "#",
+    link: "/product",
     image: productImg4,
     price: "30.99",
     badge: "50%",
@@ -151,7 +151,7 @@ export const shopData = [
   },
   {
     title: "Product Title ten",
-    link: "#",
+    link: "/product",
     image: productImg5,
     price: "30.99",
     badge: "Hot",
@@ -169,7 +169,7 @@ export const shopData = [
   },
   {
     title: "Product Title Eleven",
-    link: "#",
+    link: "/product",
     image: productImg1,
     price: "10.99",
     // badge: "New",
@@ -184,7 +184,7 @@ export const shopData = [
   },
   {
     title: "Product Title Twelve",
-    link: "#",
+    link: "/product",
     image: productImg2,
     price: "31.99",
     badge: "10%",
@@ -199,7 +199,7 @@ export const shopData = [
   },
   {
     title: "Product Title Thirteen",
-    link: "#",
+    link: "/product",
     image: productImg3,
     price: "15.99",
     badge: "Populer",
@@ -214,7 +214,7 @@ export const shopData = [
   },
   {
     title: "Product Title Fourteen",
-    link: "#",
+    link: "/product",
     image: productImg4,
     price: "30.99",
     badge: "50%",
@@ -232,7 +232,7 @@ export const shopData = [
   },
   {
     title: "Product Title Fifteen",
-    link: "#",
+    link: "/product",
     image: productImg5,
     price: "30.99",
     badge: "Hot",

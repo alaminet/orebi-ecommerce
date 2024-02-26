@@ -87,8 +87,8 @@ const ProductInside = () => {
                 <div>In Stock</div>
               </Flex>
               <Flex className="gap-3 py-4">
-                <Button title="Add to Wishlist" />
-                <ButtonAlt title="Add to cart" />
+                <Button title="Add to Wishlist" href="#" />
+                <ButtonAlt title="Add to cart" href="#" />
               </Flex>
               <div>
                 <Accordion title="Feature & Details" details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, soluta?"/>

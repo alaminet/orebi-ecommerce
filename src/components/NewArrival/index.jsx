@@ -36,7 +36,7 @@ const NewArrival = () => {
             
             newArrivalData?.map((item,i)=>(
                 <SwiperSlide key={i}>
-                <Product badge={item?.badge} title={item?.title} image={item?.image} price={item?.price} varient={item?.color}/>
+                <Product badge={item?.badge} title={item?.title} link="/product" image={item?.image} price={item?.price} varient={item?.color}/>
                 </SwiperSlide>
             ))
         }

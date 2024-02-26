@@ -7,10 +7,12 @@ import ListItem from "../ListItem";
 import { MenuData } from "./MenuData";
 import Link from "../Link";
 import { FaBars } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
   const [screen, setScreen] = useState();
+  const navigate = useNavigate()
 
   useEffect(() => {
     let scrollWidth = (e) => {
@@ -46,6 +48,7 @@ const Navbar = () => {
                       <Link
                         className="text-sm hover:font-bold"
                         href={item.link}
+                        
                       >
                         {item.title}
                       </Link>
