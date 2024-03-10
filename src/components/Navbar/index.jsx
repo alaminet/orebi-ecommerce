@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Container from "../Container";
-import Flex from "../Flex";
 import Logo from "../../assets/svg/logo";
 import Lists from "../Lists";
 import ListItem from "../ListItem";
 import { MenuData } from "./MenuData";
-// import Link from "../Link";
 import { FaBars } from "react-icons/fa6";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
   const [screen, setScreen] = useState();
-  const navigate = useNavigate()
 
   useEffect(() => {
     let scrollWidth = (e) => {
@@ -45,12 +42,6 @@ const Navbar = () => {
                 <Lists className="lg:flex lg:justify-center lg:gap-4 lg:static absolute right-0 z-10 bg-white p-5 lg:p-0">
                   {MenuData.map((item, i) => (
                     <ListItem className="p-2 lg:px-4 lg:py-2" key={i}>
-                      {/* <Link
-                        className="text-sm hover:font-bold"
-                        href={item.link}
-                      >
-                        {item.title}
-                      </Link> */}
                       <Link to={item.link}>{item.title}</Link>
                     </ListItem>
                   ))}

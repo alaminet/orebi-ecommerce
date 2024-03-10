@@ -6,7 +6,7 @@ import Image from "../Image";
 import Button from "../Button";
 import ButtonAlt from "../ButtonAlt";
 import { cartData } from "./cartData";
-import Link from "../Link";
+import { Link } from 'react-router-dom';
 import useClickOutside from "../../helpers/clickOutside";
 
 const Cartbucket = () => {
@@ -45,7 +45,7 @@ const Cartbucket = () => {
                   </div>
                   <Flex className="justify-between w-full">
                     <div>
-                      <Link href={item.link}>
+                      <Link to={item.link}>
                         <h6 className="capitalize font-bold">{item.title}</h6>
                         <p className="text-sm">{item.price}</p>
                       </Link>

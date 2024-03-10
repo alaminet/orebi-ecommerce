@@ -3,7 +3,7 @@ import Grid from '../Grid'
 import Lists from '../Lists'
 import { footerSocialData } from '../Footer/footerData'
 import ListItem from '../ListItem'
-import Link from '../Link'
+import { Link } from 'react-router-dom';
 import Container from '../Container'
 
 const Copyrigts = () => {
@@ -15,7 +15,7 @@ const Copyrigts = () => {
           <Lists className="flex gap-3">
             {footerSocialData.map((item, i) => (
               <ListItem key={i}>
-                <Link href={item.link}>{item.icon}</Link>
+                <Link to={item.link}>{item.icon}</Link>
               </ListItem>
             ))}
           </Lists>
@@ -23,7 +23,7 @@ const Copyrigts = () => {
         <div>
           <p className="text-center lg:text-right text-xs text-gray">
             2023 Orebi Minimal eCommerce Developed by{" "}
-            <Link href="#" className="text-black">
+            <Link to="#" className="text-black">
               Al Amin
             </Link>
           </p>

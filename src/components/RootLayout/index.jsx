@@ -5,8 +5,6 @@ import Footer from '../Footer'
 import Copyrigts from '../Copyrights'
 import { Outlet } from 'react-router-dom'
 
-
-
 const RootLayout = () => {
   return (
    <>

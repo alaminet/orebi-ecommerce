@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Flex from "../Flex";
 import { FaBarsStaggered } from "react-icons/fa6";
 import ListItem from "../ListItem";
-import Link from "../Link";
+import { Link } from 'react-router-dom';
 import Lists from "../Lists";
 import { categoryData } from "./categoryData";
 import useClickOutside from "../../helpers/clickOutside";
@@ -43,7 +43,7 @@ const CategoryMenu = () => {
                   key={i}
                   className="font-primaryFont last:border-b-0 font-normal text-sm text-black py-2 px-3 border-b border-solid hover:pl-6 transition-all duration-300 ease-in border-white-100"
                 >
-                  <Link className="capitalize" href={item.link}>
+                  <Link className="capitalize" to={item.link}>
                     {item.title}
                   </Link>
                 </ListItem>

@@ -1,11 +1,11 @@
 import React from 'react';
 import defaultImg from"../../assets/images/productImg.webp";
 import Badge from '../Badge';
-import Link from '../Link';
 import Image from '../Image';
 import { MdFavoriteBorder, MdOutlineCompareArrows, MdOutlineShoppingCart } from 'react-icons/md';
 import Flex from '../Flex';
 import Title from '../Title';
+import { Link } from 'react-router-dom';
 
 const Product = ({badge,link,image,title,price,varient}) => {
   return (
@@ -15,12 +15,12 @@ const Product = ({badge,link,image,title,price,varient}) => {
           {
             badge && <Badge title={badge} />
           }
-          <Link href={link ?? "#"}>
+          <Link to={link ?? "#"}>
             <Image
-              src={image ?? defaultImg}
-              alt={title ?? "Product Image"}
-              className="w-[370px] h-[370px] object-cover"
-            />
+                src={image ?? defaultImg}
+                alt={title ?? "Product Image"}
+                className="w-[370px] h-[370px] object-cover"
+              />
           </Link>
           <div className="bg-white absolute z-20 w-full bottom-[-32%] group-hover:bottom-0 ease-in-out delay-300 transition-all">
       <Flex className="justify-end p-5 flex-col gap-3">

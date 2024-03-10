@@ -2,8 +2,8 @@ import React from 'react'
 import Slider from 'react-slick';
 import { bannerData } from './bannerData';
 import Image from '../Image';
-import Link from '../Link';
 import BannerBottom from './BannerBottom';
+import { Link } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -24,9 +24,7 @@ const Banner = () => {
     <div className="overflow-hidden">
         <Slider {...settings}>
           {bannerData.map((item, i) => (
-            <Link key={i} href={item.link}>
-              <Image src={item.image} alt={i} />
-            </Link>
+            <Link key={i} to={item.link}><Image src={item.image} alt={i} /></Link>
           ))}
         </Slider>
       </div>

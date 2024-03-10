@@ -4,7 +4,7 @@ import { MdArrowDropDown } from "react-icons/md";
 import Lists from "../Lists";
 import ListItem from "../ListItem";
 import Flex from "../Flex";
-import Link from "../Link";
+import { Link } from 'react-router-dom';
 import useClickOutside from "../../helpers/clickOutside";
 import { userData } from "./userData";
 
@@ -34,7 +34,7 @@ const UserSetting = () => {
               {userData.map((item, i) => (
                 <ListItem key={i}>
                   <Link
-                    href={item.link}
+                    to={item.link}
                     className="text-gray-700 block px-4 py-2 text-sm last:border-b-0 border-b border-solid border-light-gray hover:pl-6 transition-all duration-300 ease-in cursor-pointer"
                   >
                     <Flex className="gap-2 items-center">
